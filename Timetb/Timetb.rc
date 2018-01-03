@@ -1,0 +1,860 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\Timetb.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""l.KOR\\afxres.rc""      // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\4.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 258, 71
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Us"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "모두의 시간표, Ver 1.26",IDC_STATIC,96,12,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013 KU Internet & Multimedia Eng.",IDC_STATIC,96,24,156,10
+    DEFPUSHBUTTON   "확인",IDOK,198,48,50,14,WS_GROUP
+    LTEXT           "Team 2",IDC_STATIC,96,42,25,8
+    CONTROL         "",IDC_STATIC123,"Static",SS_BLACKFRAME,12,12,72,36
+    LTEXT           "K J H",IDC_STATIC,126,42,17,8
+    LTEXT           "K H A",IDC_STATIC,96,54,19,8
+    LTEXT           "M J Y",IDC_STATIC,126,54,18,8
+    LTEXT           "Y S M",IDC_STATIC,156,54,19,8
+END
+
+IDD_TIMETB_DIALOG DIALOGEX 0, 0, 347, 293
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "모두의 시간표"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "EDIT",IDC_EDIT,5,272,50,14
+    PUSHBUTTON      "Setting",IDC_SETTING,171,272,50,14
+    PUSHBUTTON      "Share",IDC_SHARE,61,272,50,14
+    PUSHBUTTON      "뭐하지?",IDC_WHAT,116,272,50,14
+    CONTROL         "",IDC_MONTHCALENDAR1,"SysMonthCal32",MCS_NOTODAY | MCS_NOTODAYCIRCLE | WS_TABSTOP,204,12,126,82
+    EDITTEXT        IDC_EDIT2,198,246,132,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT1,204,102,126,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+END
+
+IDD_EDITDLG DIALOGEX 0, 0, 394, 296
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "시간표삭제",IDC_EDIT_DELETE,163,249,58,32
+    PUSHBUTTON      "대표시간표설정",IDC_EDIT_MAIN,230,250,66,31
+    EDITTEXT        IDC_EDIT_FILENAME,21,265,66,14,ES_MULTILINE | ES_AUTOHSCROLL
+    PUSHBUTTON      "시간표찾기",IDC_EDIT_FIND,94,249,61,32
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,34,30,318,126
+    EDITTEXT        IDC_EDIT2,77,162,74,14,ES_AUTOHSCROLL
+    LTEXT           "과목명",IDC_STATIC,35,164,25,8
+    LTEXT           "과목코드",IDC_STATIC,35,182,33,8
+    LTEXT           "교수",IDC_STATIC,35,200,17,8
+    LTEXT           "강의실",IDC_STATIC,35,218,25,8
+    EDITTEXT        IDC_EDIT3,77,180,74,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,77,198,74,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,77,216,73,14,ES_AUTOHSCROLL
+    LTEXT           "요일",IDC_STATIC,171,166,17,8
+    LTEXT           "시간",IDC_STATIC,171,184,17,8
+    PUSHBUTTON      "새 시간표 추가",IDC_EDIT_ADD,304,250,66,30
+    LTEXT           "~",IDC_STATIC,272,183,8,8
+    LTEXT           "파일명",IDC_STATIC,22,253,25,8
+    PUSHBUTTON      "과목추가",IDC_BUTTON2,162,203,42,30
+    PUSHBUTTON      "수정",IDC_BUTTON3,210,203,42,30
+    PUSHBUTTON      "과목삭제",IDC_BUTTON4,258,203,42,30
+    COMBOBOX        IDC_COMBO1,194,163,65,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,194,181,65,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,290,181,65,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "시간표 편집",IDC_STATIC,12,12,366,230
+    PUSHBUTTON      "시간표저장(필수)",IDC_BUTTON5,306,203,66,30
+END
+
+IDD_SHAREDLG DIALOGEX 0, 0, 130, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Share"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "SEND",IDC_SHARE_SEND,11,12,108,14
+    PUSHBUTTON      "LOAD",IDC_SHARE_LOAD,11,54,108,14
+END
+
+IDD_WHATDLG DIALOGEX 0, 0, 136, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "What can I do?"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "검색",IDC_WHAT_SEARCH,9,88,117,14
+    GROUPBOX        "공강시간",IDC_STATIC,11,6,109,31
+    COMBOBOX        IDC_WHAT_TIMECOM,23,19,90,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "성별",IDC_STATIC,12,48,114,30
+    COMBOBOX        IDC_WHAT_GENDERCOM,24,60,90,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SETTING DIALOGEX 0, 0, 148, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "About Us",IDC_SETTING_ABOUT,12,60,126,15
+    PUSHBUTTON      "테마선택",IDC_SETTING_THEME,12,12,125,14
+END
+
+IDD_EDIT_ADDDLG DIALOGEX 0, 0, 316, 27
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "새 시간표 추가"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NEWNAME,53,6,139,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "추가",IDC_EDIT_ADD_ADD,198,6,50,14
+    PUSHBUTTON      "취소",IDCANCEL,252,6,50,14
+    LTEXT           "시간표 이름 :",-1,3,8,50,13
+END
+
+IDD_SETTING_NAMEDLG DIALOGEX 0, 0, 292, 39
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "사용자이름변경"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NAME_EDIT,12,18,84,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "확인",IDOK,228,18,50,14
+    LTEXT           "※ 다른이용자가 알 수있도록 이름이나 본인을 나타내는 별명을 사용하세요.",IDC_STATIC,12,6,268,8
+END
+
+IDD_ADDTABLE DIALOGEX 0, 0, 280, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "시간표 추가"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "추가",IDC_ADDINFO,168,116,50,14
+    PUSHBUTTON      "닫기",IDCANCEL,222,116,50,14
+    EDITTEXT        IDC_ADD_NAME,50,26,101,13,ES_MULTILINE | ES_AUTOHSCROLL
+    LTEXT           "과목명",IDC_STATIC,12,28,26,10
+    LTEXT           "교수님",IDC_STATIC,12,44,26,10
+    LTEXT           "강의실",IDC_STATIC,12,60,26,10
+    EDITTEXT        IDC_ADD_PF,50,42,101,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADD_ROOM,50,58,101,13,ES_MULTILINE | ES_AUTOHSCROLL
+    LTEXT           "~",IDC_STATIC,184,93,8,15
+    COMBOBOX        IDC_ADD_WEEK,19,92,64,18,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TIME_START,110,92,64,18,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TIME_FIN,201,92,64,18,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "요일",IDC_STATIC,12,80,78,30
+    GROUPBOX        "시간",IDC_STATIC,102,80,168,30
+    EDITTEXT        IDC_ADD_CODE,50,9,100,14,ES_AUTOHSCROLL
+    LTEXT           "과목코드",IDC_STATIC,12,12,33,8
+END
+
+IDD_WHATSHOWDLG DIALOGEX 0, 0, 460, 297
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,0,0,456,294
+END
+
+IDD_WEATHER DIALOGEX 0, 0, 316, 233
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "오늘의 날씨입니다(기상청)"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,7,7,302,202
+    PUSHBUTTON      "시간표시작하기",IDOK,219,212,90,14
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 358, 297
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "공강시간비교"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,222,24,120,258
+    LTEXT           "동일 공강시간",IDC_STATIC,222,12,51,8
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 214, 45
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Send"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "dat폴더에 있는 maintable.txt 파일을 보내주세요.",IDC_STATIC,6,6,169,8
+    COMBOBOX        IDC_COMBO1,6,24,90,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "보내러가기",IDC_BUTTON1,102,24,50,14
+    PUSHBUTTON      "취소",IDCANCEL,156,24,50,14
+END
+
+IDD_DIALOG5 DIALOGEX 0, 0, 310, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "테마선택"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,162,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,162,50,14
+    CONTROL         "",IDC_STATIC1,"Static",SS_BLACKFRAME,6,6,90,48
+    CONTROL         "",IDC_STATIC2,"Static",SS_BLACKFRAME,108,6,90,48
+    CONTROL         "",IDC_STATIC3,"Static",SS_BLACKFRAME,210,6,90,48
+    CONTROL         "",IDC_STATIC4,"Static",SS_BLACKFRAME,6,84,90,48
+    CONTROL         "",IDC_STATIC5,"Static",SS_BLACKFRAME,108,84,90,48
+    CONTROL         "",IDC_STATIC6,"Static",SS_BLACKFRAME,210,84,90,48
+    LTEXT           "Basic",IDC_STATIC,42,60,17,8
+    LTEXT           "Apple",IDC_STATIC,144,60,19,8
+    LTEXT           "Shark",IDC_STATIC,246,60,19,8
+    LTEXT           "Totoro",IDC_STATIC,246,138,22,8
+    LTEXT           "Playboy",IDC_STATIC,144,138,26,8
+    LTEXT           "Milk",IDC_STATIC,42,138,12,8
+    COMBOBOX        IDC_COMBO1,102,162,84,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Timetb.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "Timetb.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_TIMETB_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 281
+    END
+
+    IDD_EDITDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 387
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 289
+    END
+
+    IDD_SHAREDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 123
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_WHATDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 129
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 141
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_EDIT_ADDDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 53
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 20
+    END
+
+    IDD_SETTING_NAMEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 32
+    END
+
+    IDD_ADDTABLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_WHATSHOWDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 453
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 290
+    END
+
+    IDD_WEATHER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 290
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\printtable.bmp"
+IDB_BITMAP2             BITMAP                  "res\\bitmap2.bmp"
+IDB_BITMAP3             BITMAP                  "res\\logo1.bmp"
+IDB_BITMAP4             BITMAP                  "res\\apple.bmp"
+IDB_BITMAP5             BITMAP                  "res\\shark.bmp"
+IDB_BITMAP6             BITMAP                  "res\\milk.bmp"
+IDB_BITMAP7             BITMAP                  "res\\playboy.bmp"
+IDB_BITMAP8             BITMAP                  "res\\totoro.bmp"
+IDB_BITMAP9             BITMAP                  "res\\logo2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_WHATDLG DLGINIT
+BEGIN
+    IDC_WHAT_TIMECOM, 0x403, 5, 0
+0x3033, 0xd0ba, "\000" 
+    IDC_WHAT_TIMECOM, 0x403, 6, 0
+0xbd31, 0xb0c3, 0x00a3, 
+    IDC_WHAT_TIMECOM, 0x403, 6, 0
+0xbd32, 0xb0c3, 0x00a3, 
+    IDC_WHAT_TIMECOM, 0x403, 10, 0
+0xbd33, 0xb0c3, 0xc0a3, 0xbbcc, 0x00f3, 
+    IDC_WHAT_GENDERCOM, 0x403, 3, 0
+0xb2b3, "\000" 
+    IDC_WHAT_GENDERCOM, 0x403, 3, 0
+0xa9bf, "\000" 
+    0
+END
+
+IDD_ADDTABLE DLGINIT
+BEGIN
+    IDC_ADD_WEEK, 0x403, 7, 0
+0xf9bf, 0xe4bf, 0xcfc0, "\000" 
+    IDC_ADD_WEEK, 0x403, 7, 0
+0xadc8, 0xe4bf, 0xcfc0, "\000" 
+    IDC_ADD_WEEK, 0x403, 7, 0
+0xf6bc, 0xe4bf, 0xcfc0, "\000" 
+    IDC_ADD_WEEK, 0x403, 7, 0
+0xf1b8, 0xe4bf, 0xcfc0, "\000" 
+    IDC_ADD_WEEK, 0x403, 7, 0
+0xddb1, 0xe4bf, 0xcfc0, "\000" 
+    IDC_TIME_START, 0x403, 6, 0
+0x3730, 0x303a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3730, 0x333a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3830, 0x303a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3830, 0x333a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3930, 0x303a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3930, 0x333a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3031, 0x303a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3031, 0x333a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3131, 0x303a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3131, 0x333a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3231, 0x303a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3231, 0x333a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3331, 0x303a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3331, 0x333a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3431, 0x303a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3431, 0x333a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3531, 0x303a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3531, 0x333a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3631, 0x303a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3631, 0x333a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3731, 0x303a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3731, 0x333a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3831, 0x303a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3831, 0x333a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3931, 0x303a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3931, 0x333a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3032, 0x303a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3032, 0x333a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3132, 0x303a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3132, 0x333a, 0x0030, 
+    IDC_TIME_START, 0x403, 6, 0
+0x3232, 0x303a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3730, 0x303a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3730, 0x333a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3830, 0x303a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3830, 0x333a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3930, 0x303a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3930, 0x333a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3031, 0x303a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3031, 0x333a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3131, 0x303a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3131, 0x333a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3231, 0x303a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3231, 0x333a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3331, 0x303a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3331, 0x333a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3431, 0x303a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3431, 0x333a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3531, 0x303a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3531, 0x333a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3631, 0x303a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3631, 0x333a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3731, 0x303a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3731, 0x333a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3831, 0x303a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3831, 0x333a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3931, 0x303a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3931, 0x333a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3032, 0x303a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3032, 0x333a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3132, 0x303a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3132, 0x333a, 0x0030, 
+    IDC_TIME_FIN, 0x403, 6, 0
+0x3232, 0x303a, 0x0030, 
+    0
+END
+
+IDD_WHATSHOWDLG DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x46b2, 0x0000, 0x3167, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_WEATHER DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x2ed2, 0x0000, 0x21e6, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_EDITDLG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 7, 0
+0xf9bf, 0xe4bf, 0xcfc0, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xadc8, 0xe4bf, 0xcfc0, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xf6bc, 0xe4bf, 0xcfc0, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xf1b8, 0xe4bf, 0xcfc0, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xddb1, 0xe4bf, 0xcfc0, "\000" 
+    IDC_COMBO2, 0x403, 6, 0
+0x3730, 0x303a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3730, 0x333a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3830, 0x303a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3830, 0x333a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3930, 0x303a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3930, 0x333a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3031, 0x303a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3031, 0x333a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3131, 0x303a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3131, 0x333a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3231, 0x303a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3231, 0x333a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3331, 0x303a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3331, 0x333a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3431, 0x303a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3431, 0x333a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3531, 0x303a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3531, 0x333a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3631, 0x303a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3631, 0x333a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3731, 0x303a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3731, 0x333a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3831, 0x303a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3831, 0x333a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3931, 0x303a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3931, 0x333a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3032, 0x303a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3032, 0x333a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3132, 0x303a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3132, 0x333a, 0x0030, 
+    IDC_COMBO2, 0x403, 6, 0
+0x3232, 0x303a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3730, 0x303a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3730, 0x333a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3830, 0x303a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3830, 0x333a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3930, 0x303a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3930, 0x333a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3031, 0x303a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3031, 0x333a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3131, 0x303a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3131, 0x333a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3231, 0x303a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3231, 0x333a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3331, 0x303a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3331, 0x333a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3431, 0x303a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3431, 0x333a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3531, 0x303a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3531, 0x333a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3631, 0x303a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3631, 0x333a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3731, 0x303a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3731, 0x333a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3831, 0x303a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3831, 0x333a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3931, 0x303a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3931, 0x333a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3032, 0x303a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3032, 0x333a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3132, 0x303a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3132, 0x333a, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3232, 0x303a, 0x0030, 
+    0
+END
+
+IDD_DIALOG4 DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 15, 0
+0x616d, 0x6c69, 0x6e2e, 0x7661, 0x7265, 0x632e, 0x6d6f, "\000" 
+    IDC_COMBO1, 0x403, 12, 0
+0x6168, 0x6d6e, 0x6961, 0x2e6c, 0x656e, 0x0074, 
+    IDC_COMBO1, 0x403, 10, 0
+0x6d67, 0x6961, 0x2e6c, 0x6f63, 0x006d, 
+    IDC_COMBO1, 0x403, 18, 0
+0x616d, 0x6c69, 0x6b2e, 0x6e6f, 0x756b, 0x2e6b, 0x6361, 0x6b2e, 0x0072, 
+
+    IDC_COMBO1, 0x403, 5, 0
+0xe2b1, 0xb8c5, "\000" 
+    0
+END
+
+IDD_DIALOG5 DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 6, 0
+0x6142, 0x6973, 0x0063, 
+    IDC_COMBO1, 0x403, 6, 0
+0x7041, 0x6c70, 0x0065, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6853, 0x7261, 0x006b, 
+    IDC_COMBO1, 0x403, 5, 0
+0x694d, 0x6b6c, "\000" 
+    IDC_COMBO1, 0x403, 8, 0
+0x6c50, 0x7961, 0x6f62, 0x0079, 
+    IDC_COMBO1, 0x403, 7, 0
+0x6f54, 0x6f74, 0x6f72, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_WHATSHOWDIALOG HTML                    "WhatShowDialog.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "Timetb 정보(&A)..."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\Timetb.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "l.KOR\afxres.rc"      // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
